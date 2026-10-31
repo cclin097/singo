@@ -1,0 +1,1 @@
+function e(e,t={},...n){let r=document.createElement(e);for(let[e,n]of Object.entries(t))e.startsWith(`on`)?r.addEventListener(e.slice(2),n):e===`class`?r.className=n:n===!0?r.setAttribute(e,``):n!==!1&&n!=null&&r.setAttribute(e,String(n));return r.append(...n),r}var t=(t,n,r=``,i=!1)=>e(`button`,{class:r,onclick:n,disabled:i},t);export{e as n,t};

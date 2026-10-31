@@ -1,0 +1,1 @@
+function e(e){let t=new BroadcastChannel(`singo-sync`);return t.onmessage=t=>e(t.data),{send:e=>t.postMessage(e),close:()=>t.close()}}export{e as t};
